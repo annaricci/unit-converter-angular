@@ -1,0 +1,28 @@
+{
+    "length": {
+        "millimeter": {
+            "centimeter": "10",
+            "decimeter": "100",
+            "meter": "1000",
+            "kilometer": "1000000"
+        },
+        "centimeter": {
+            "millimeter": "0.1",
+            "decimeter": "10",
+            "meter": "100",
+            "kilometer": "100000"
+        },
+        "decimeter": {
+            "millimeter": "0.01",
+            "centimeter": "0.1",
+            "meter": "10",
+            "kilometer": "10000"
+        },
+        "meter": {
+            "millimeter": "0.001",
+            "centimeter": "0.01",
+            "decimeter": "0.1",
+            "kilometer": "1000"
+        }
+    }
+}
