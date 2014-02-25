@@ -1,0 +1,16 @@
+{
+    "temperature": {
+        "celsius": {
+            "farenhiet": "(f-32)*(5/9)",
+            "kelvin": "k-273"
+        },
+        "farenhiet": {
+            "celsius": "(c*(5/9))+32",
+            "kelvin": "((k-273)*(5/9))+32"
+        },
+        "kelvin": {
+            "celsius": "c+273",
+            "farenhiet": "((f-32)*1.8)+273)"
+        }
+    }
+}
