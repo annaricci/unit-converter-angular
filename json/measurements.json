@@ -1,0 +1,22 @@
+{
+    "measurements": [
+        {
+            "measurementName": "Area"
+        },
+        {
+            "measurementName": "Currency"
+        },
+        {
+            "measurementName": "Length"
+        },
+        {
+            "measurementName": "Temperature"
+        },
+        {
+            "measurementName": "Volume"
+        },
+        {
+            "measurementName": "Weight"
+        }
+    ]
+}
