@@ -1,22 +1,28 @@
 {
     "measurements": [
         {
-            "measurementName": "Area"
+            "name": "Area",
+            "value": "area"
         },
         {
-            "measurementName": "Currency"
+            "name": "Currency",
+            "value": "currency"
         },
         {
-            "measurementName": "Length"
+            "name": "Length",
+            "value": "length"
         },
         {
-            "measurementName": "Temperature"
+            "name": "Temperature",
+            "value": "temperature"
         },
         {
-            "measurementName": "Volume"
+            "name": "Volume",
+            "value": "volume"
         },
         {
-            "measurementName": "Weight"
+            "name": "Weight",
+            "value": "weight"
         }
     ]
 }
