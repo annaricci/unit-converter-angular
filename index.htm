@@ -6,6 +6,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/controller.js"></script>
+    <script src="js/service.js"></script>    
 </head>
 <body>
     <div id="container">
@@ -16,17 +17,20 @@
             <form id="unit-converter">
                 <div ng-controller="MeasurementListCtrl">
                     <label>Choose the Measurement for conversion: </label>
-                    <select id="measurements" ng-model="measurements" ng-options="measurement.value as measurement.name for measurement in measurements"></select>
+                    <select id="measurements" ng-model="measurement" ng-options="measurement.value as measurement.name for measurement in measurements" required>
+                        <option value=''>--Measurement--</option>
+                    </select>
+                    <span>{{message}}</span>
                 </div>
                 <div class='unit-wrapper'>
                     <div class="from-wrapper">
                         <p>From:</p>
                         <div ng-controller="UnitListCtrl" class="">
                             <label>Unit: </label>
-                            <select id="from-unit">
-                                <option value="0">Unit</option>
-                                <option ng-repeat="unit in units" value="{{}}">{{}}</option>
+                            <select id="from-unit" ng-model="fromunit.name" ng-options="fromunit.value as fromunit.name for fromunit in fromunits">
+                                <option value=''>--From Unit--</option>
                             </select>
+                            <span>{{message}}</span>
                         </div>
                     </div>
                     <div class="to-wrapper">
@@ -37,6 +41,7 @@
                                 <option value="0">Unit</option>
                                 <option ng-repeat="unit in units" value="{{}}">{{}}</option>
                             </select>
+                            <span>{{message}}</span>
                         </div>
                     </div>
                 </div>
